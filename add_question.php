@@ -9,7 +9,8 @@
 </head>
 <body>
     <h1>Éditer Question</h1>
-
+    
+<!-- Formulaire pour ajouter une question-->
 <form action="" method="post">
             <div class="c100">
                 <label for="quest">Question : </label>

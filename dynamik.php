@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
-//    session_start();
+
     try{
         $servname = 'localhost';
         $dbname = 'quizz';
@@ -16,7 +16,7 @@
         $pass = '';
 
 
-//$_SESSION['id']=$_GET['repA'];
+
 $dbco = new PDO("mysql:host=$servname;dbname=$dbname", $user, $pass);
 $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -26,17 +26,7 @@ $sth->execute();
 $result = $sth->fetchAll(PDO::FETCH_ASSOC);
 $_SESSION['result']=$result;
 
-// $tri = "INSERT INTO * From questions "; 
-// $sth = $dbco->prepare($tri);
-// $sth->execute();
-    
-// $tri = "DELETE From questions WHERE "; 
-// $sth = $dbco->prepare($tri);
-// $sth->execute();
- ;
- //$_SESSION['joze']=$_POST['joze'];
-    // echo "<pre>",print_r($result),"</pre>";
-//header("location: index.php");
+
     
     }
   
