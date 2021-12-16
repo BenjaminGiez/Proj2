@@ -8,8 +8,9 @@
     <title>Éditer Question</title>
 </head>
 <body>
+    <h1>Éditer Question</h1>
 
-<form action="add_question.php" method="post">
+<form action="dynamik.php" method="get">
             <div class="c100">
                 <label for="quest">Question : </label>
                 <input type="text" id="quest" name="quest">
