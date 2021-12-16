@@ -1,0 +1,39 @@
+body
+{
+    background-image: url(https://as2.ftcdn.net/v2/jpg/02/38/68/25/1000_F_238682589_sHdFpFiza2nxwQ86vI3PW47LfL1LTjGB.jpg);
+}
+
+h1
+{
+    text-align: center;
+    color: brown;
+}
+
+#questions
+{
+    flex-direction: row;
+    text-align: center;
+}
+
+#reponses
+{
+    
+    flex-direction: row;
+    text-align: center;
+
+}
+
+form
+{
+    font-size: 20px;
+}
+
+#formulaire
+{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 800px;
+    border: 3px black groove;
+    background-color: #e0e0e0e0;
+}
