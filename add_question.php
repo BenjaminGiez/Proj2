@@ -98,7 +98,7 @@ VALUES (:Question, :Reponse_A, :Reponse_B, :Reponse_C, :Reponse_D)
         $repC = $_POST['repC'];
         $repD = $_POST['repD'];
         $sth->execute();
-        echo 'went good';
+        echo 'Question ajoutée !';
     } catch (PDOException $e) {
         echo "Erreur : " . $e->getMessage();
     }
