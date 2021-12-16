@@ -44,24 +44,6 @@ for ($i = 0; $i <= count($_SESSION['result']) - 1; $i++) {
 }
 
 
-//echo '<input type="submit" name="joze" value="',$i,'">';
-//echo '</form>';
-
-//boucle là
-// echo "Question :" . $_SESSION['result'] [0][0] . '<br>';
-// echo "Réponse 1 :" . $_SESSION['result'] [1] . '<br>';
-// echo "Réponse 2 :" . $_SESSION['result'] [2] . '<br>';
-// echo "Réponse 3 :" . $_SESSION['result'] [3] . '<br>';
-// echo "Réponse 4 :" . $_SESSION['result'] [4] . '<br>';
-
-// echo "<pre>",print_r($_SESSION['result']),"</pre>";
-// echo $_SESSION['joze'];
-
-
-
-
-
-
 ?>
 
 <body>
