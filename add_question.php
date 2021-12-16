@@ -58,6 +58,8 @@
             </section>
     </section>
     </form>
+    <div class="container"></div>
+<a href="index.php"> <button type="button" class="btn btn-warning">Retour Tableau de Bord</button></a><br>
 </body>
 
 </html>
@@ -96,7 +98,7 @@ VALUES (:Question, :Reponse_A, :Reponse_B, :Reponse_C, :Reponse_D)
         $repC = $_POST['repC'];
         $repD = $_POST['repD'];
         $sth->execute();
-        echo 'went good';
+        echo 'Question ajoutée !';
     } catch (PDOException $e) {
         echo "Erreur : " . $e->getMessage();
     }
