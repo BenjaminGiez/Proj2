@@ -33,16 +33,20 @@ session_start()
             include 'dynamik.php';
             for($i=0;$i <= count($_SESSION['result'])-1;$i++)
             {
-                //echo '<form action="" method="post">';
+                
                 echo  $_SESSION['result'][$i]['Question'] . '<br>';
                 echo "Réponse 1 :" . $_SESSION['result'][$i]['Reponse_A'] . '<br>';
                 echo "Réponse 2 :" . $_SESSION['result'][$i]['Reponse_B'] . '<br>';
                 echo "Réponse 3 :" . $_SESSION['result'][$i]['Reponse_C'] . '<br>';
                 echo "Réponse 4 :" . $_SESSION['result'][$i]['Reponse_D'] . '<br>';
-                echo '<a href="modif.php?question=' . $_SESSION['result'][$i]['Id_quest'].'"><button type="submit">modifier</button></a>';
+                echo '<a href="modif.php?question=' . $_SESSION['result'][$i]['Id_quest'].'"><button type="submit">Modifier</button></a>';
+                echo '<a href="suppr.php?question=' . $_SESSION['result'][$i]['Id_quest'].'"><button type="submit">Supprimer</button></a>';
+              
+            }
+               
                 //echo '<input type="submit" name="joze" value="',$i,'">';
                 //echo '</form>';
-            }
+            
             //boucle là
                 // echo "Question :" . $_SESSION['result'] [0][0] . '<br>';
                 // echo "Réponse 1 :" . $_SESSION['result'] [1] . '<br>';
@@ -59,13 +63,6 @@ session_start()
 
                 
 ?>
-
-<button type="button" class="btn btn-info">Éditer</button>
-</div><br>
-                                     
-
-
-<body>
-    
+<body>   
 </body>
 </html>
