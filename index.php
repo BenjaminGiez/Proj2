@@ -2,6 +2,8 @@
 <html lang="fr">
 
 <head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="images/png" sizes="16x16" href="https://sites.ffkarate.fr/hautsdefrance/wp-content/uploads/sites/113/2018/01/English-Grammar-Quiz-Time.png" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,31 +24,49 @@
 </head>
 <h1>Tableau de Bord</h1>
 
-<div class="container"></div>
-<a href="add_question.php"> <button type="button" class="btn btn-success">Ajouter une question</button></a><br>
-<a href="quizz.php"> <button type="button" class="btn btn-success">Tester le Quizz</button></a>
+<br>
+
+<body>
+
+
+
+<div class="container">
+<a href="add_question.php"> <button type="button" class="btn btn-success btn-lg">Ajouter une question</button></a><br>
+<a href="quizz.php"> <button type="button" class="btn btn-success btn-lg">Tester le Quizz</button></a>
 </div>
 
-<h3>Question 1</h3>
+<br>
+
+
+<section id="panneau">
+
 
 <?php
+
+
+
 
 include 'dynamik.php';
 for ($i = 0; $i <= count($_SESSION['result']) - 1; $i++) {
 
+    
+echo '<div class="container_question">
+
+<h3>Question '.($i+1).'</h3>';
     echo  $_SESSION['result'][$i]['Question'] . '<br>';
     echo "Réponse 1 :" . $_SESSION['result'][$i]['Reponse_A'] . '<br>';
     echo "Réponse 2 :" . $_SESSION['result'][$i]['Reponse_B'] . '<br>';
     echo "Réponse 3 :" . $_SESSION['result'][$i]['Reponse_C'] . '<br>';
     echo "Réponse 4 :" . $_SESSION['result'][$i]['Reponse_D'] . '<br>';
-    echo '<a href="modif.php?question=' . $_SESSION['result'][$i]['Id_quest'] . '"><button type="submit">Modifier</button></a>';
-    echo '<a href="suppr.php?question=' . $_SESSION['result'][$i]['Id_quest'] . '"><button type="submit">Supprimer</button></a>';
+    echo '<a href="modif.php?question=' . $_SESSION['result'][$i]['Id_quest'] . '"><button type="submit" class="btn btn-warning btn-sm">Editer</button></a>';
+    echo '<a href="suppr.php?question=' . $_SESSION['result'][$i]['Id_quest'] . '"><button type="submit" class="btn btn-danger btn-sm">Supprimer</button>'.'<br></a></div>';
 }
 
 
 ?>
 
-<body>
+</section>
+
 </body>
 
 </html>
