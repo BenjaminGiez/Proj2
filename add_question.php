@@ -3,7 +3,7 @@
 
 <head>
 
-    <link rel="stylesheet" href="add_question.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="images/png" sizes="16x16" href="https://sites.ffkarate.fr/hautsdefrance/wp-content/uploads/sites/113/2018/01/English-Grammar-Quiz-Time.png" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,9 +28,10 @@
                     <label for="quest"> Question : </label>
                     <input type="text" id="quest" name="quest">
                 </div>
-                <br>
-
+                
             </section>
+            <br>
+
 
             <section id="reponses">
                 <div class="c100">
@@ -51,15 +52,18 @@
                 <div class="c100">
                     <label for="rep">Réponse D : </label>
                     <input type="repD" id="repD" name="repD">
+                    <br>
                     <div class="c100" id="submit">
-                        <input type="submit" value="Envoyer">
+                        <br>
+                        <input type="submit" value=Envoyer button type="button" class="btn btn-warning">
+                        <a href="index.php"> <button type="button" class="btn btn-primary">Retour Tableau de Bord</button></a><br>
                     </div>
                     <br>
             </section>
     </section>
     </form>
     <div class="container"></div>
-<a href="index.php"> <button type="button" class="btn btn-warning">Retour Tableau de Bord</button></a><br>
+
 </body>
 
 </html>
