@@ -2,7 +2,9 @@
 <html lang="fr">
 
 <head>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="images/png" sizes="16x16" href="https://sites.ffkarate.fr/hautsdefrance/wp-content/uploads/sites/113/2018/01/English-Grammar-Quiz-Time.png" />
     <meta charset="UTF-8">
@@ -17,6 +19,7 @@
     <section id="formulaire">
         <h1>Éditer Question</h1>
 
+
         <br>
 
         <form action="" method="post">
@@ -28,7 +31,7 @@
                     <label for="quest"> Question : </label>
                     <input type="text" id="quest" name="quest">
                 </div>
-                
+
             </section>
             <br>
 
