@@ -83,7 +83,6 @@
 
     <div class="varicelle">
         <a href="add_question.php"> <button type="button" class="btn btn-primary btn-lg">Ajouter une question</button></a><br>
-        <a href="quizz.php"> <button type="button" class="btn btn-success btn-lg">Tester le Quizz</button></a>
     </div>
 
 </body>
